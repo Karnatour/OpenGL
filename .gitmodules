@@ -3,4 +3,4 @@
 	url = https://github.com/glfw/glfw
 [submodule "glad"]
 	path = vendor/glad
-	url = https://github.com/Dav1dde/glad
+	url = https://github.com/ondranedo/glad

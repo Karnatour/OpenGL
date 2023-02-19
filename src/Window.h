@@ -5,8 +5,8 @@
 #ifndef OPENGLPROJECT_WINDOW_H
 #define OPENGLPROJECT_WINDOW_H
 
-#include <glad/gl.h>
-#include <GLFW/glfw3.h>
+#include "glad/gl.h"
+#include "GLFW/glfw3.h"
 
 class Window{
 private:
@@ -16,7 +16,7 @@ public:
     GLFWwindow *window{};
     void windowInit();
     void createWindow();
-    static void framebufferSizeCallback(GLFWwindow* window, int width, int height);
+    void framebufferSizeCallback(GLFWwindow* window, int width, int height);
 };
 
 #endif //OPENGLPROJECT_WINDOW_H

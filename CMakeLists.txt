@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.24)
 project(OpenGLProject)
 
 set(CMAKE_CXX_STANDARD 23)
-add_executable(OpenGLProject main.cpp Window.cpp Window.h Input.cpp Input.h)
+add_executable(OpenGLProject src/main.cpp src/Window.cpp src/Window.h src/Input.cpp src/Input.h src/Triangle.h src/VBO.cpp src/VBO.h src/ShaderCompiler.cpp src/ShaderCompiler.h)
 
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)

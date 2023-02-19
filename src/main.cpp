@@ -1,6 +1,6 @@
-#include "Window.h"
 #include "Input.h"
-void processInput(GLFWwindow *window);
+
+#include "ShaderCompiler.h"
 
 int main()
 {

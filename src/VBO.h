@@ -7,11 +7,12 @@
 
 #include "glad/gl.h"
 
+
 class VBO{
-private:
-    unsigned int m_VBO;
 public:
+    unsigned int m_VBO;
     void initVBO();
+    void bindVBO();
 };
 
 #endif //OPENGLPROJECT_VBO_H

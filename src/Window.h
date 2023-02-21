@@ -16,7 +16,6 @@ public:
     GLFWwindow *window{};
     void windowInit();
     void createWindow();
-    void framebufferSizeCallback(GLFWwindow* window, int width, int height);
 };
 
 #endif //OPENGLPROJECT_WINDOW_H

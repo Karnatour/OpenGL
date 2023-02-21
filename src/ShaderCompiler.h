@@ -8,17 +8,27 @@
 #include "glad/gl.h"
 #include <string>
 #include <fstream>
-
+#include <iostream>
 
 class ShaderCompiler{
 private:
-    unsigned int vertexShader;
+    unsigned int vertexShader,fragmentShader,shaderProgram;
+    int success,logLenth;
     std::string strShader;
-    const char *strTriangle;
+    const char* bufferShader;
 public:
     void initCompiler();
-    void shaderToString();
-    void attachShader();
+    void initLinker();
+    void vertexShaderToString();
+    void fragmentShaderToString();
+    void compileShader();
+    void testShaderSuccess();
+    void testLinkerSuccess();
+    void linkShader();
+    void useProgram();
+    void deleteShader();
 };
+
+
 
 #endif //OPENGLPROJECT_SHADERCOMPILER_H

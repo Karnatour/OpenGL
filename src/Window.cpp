@@ -14,10 +14,6 @@ void Window::windowInit() {
 void Window::createWindow() {
     window = glfwCreateWindow(WIDTH, HEIGHT, "Test", nullptr, nullptr);
     glfwMakeContextCurrent(window);
-    glfwSetFramebufferSizeCallback(window,framebufferSizeCallback);
+    glfwSetFramebufferSizeCallback(window, [](GLFWwindow* window, int width, int height)->void { glViewport(0, 0, width, height); });
     gladLoadGL(GLADloadfunc(glfwGetProcAddress));
-}
-
-void Window::framebufferSizeCallback(GLFWwindow *window, int width, int height) {
-    glViewport(0, 0, width, height);
 }
